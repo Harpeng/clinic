@@ -1,2 +1,10 @@
-@import './vendor/normalize.scss';
-@import './vendor/font.scss';
+@import '../styles/vendor/normalize.scss';
+@import '../styles/vendor/font.scss';
+@import '../styles/variables//breakpoints.scss';
+@import '../styles/variables/color.scss';
+@import '../styles/variables/fontSize.scss';
+@import '../styles/variables/size.scss';
+@import '../styles/mixins/button.scss';
+@import '../styles/mixins/flex.scss';
+@import '../styles/mixins/link.scss';
+@import '../styles/mixins/adaptive.scss';

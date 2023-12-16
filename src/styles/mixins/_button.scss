@@ -1,0 +1,10 @@
+@mixin button($colorButton: $buttonColor, $border: none, $colorText: $pageColorMain) {
+    border-radius: $buttonRadius;
+    background-color: $colorButton;
+    color: $colorText;
+    border: $border;
+    text-align: center;
+    font-size: $secondaryFontSize;
+    line-height: $secondaryLineHeight;
+    font-weight: $normalFontWeight;
+}

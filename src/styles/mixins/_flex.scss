@@ -1,0 +1,10 @@
+@mixin flex($direction: row, $justifyContent: flex-start, $alignItems: stretch, $alignContent: stretch, $justifySelf: auto, $alignSelf: auto , $wrap: nowrap) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justifyContent;
+    align-items: $alignItems;
+    align-content: $alignContent ;
+    justify-self: $justifySelf;
+    align-self: $alignSelf ;
+    flex-wrap: $wrap;
+}
