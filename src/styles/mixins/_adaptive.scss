@@ -1,14 +1,26 @@
 @mixin adaptiveFont($pcSize, $mobileSize ) {
     $addSize: $pcSize - $mobileSize;
-    font-size: calc(#{$mobileSize + px} + #{$addSize + px} * ((100vw / 320px) / #{$screen-desktop} - 320));
+    font-size: calc(#{$mobileSize + px} + #{$addSize + px} * ((100vw - 375px) / (#{$maxWidth} - 375)));
 }
 
 @mixin adaptiveLineHeight($pcSize, $mobileSize ) {
     $addSize: $pcSize - $mobileSize;
-    line-height: calc(#{$mobileSize + px} + #{$addSize + px} * ((100vw / 320px) / #{$screen-desktop} - 320));
+    line-height: calc(#{$mobileSize + px} + #{$addSize + px} * ((100vw - 375px) / (#{$maxWidth} - 375)));
 }
 
 @mixin adaptiveSize($pcSize, $mobileSize, $maxWidth ) {
     $addSize: $pcSize - $mobileSize;
-    max-width: calc(#{$mobileSize + px} + #{$addSize + px} * ((100vw / 320px) / #{$maxWidth} - 320));
+    max-width: calc(#{$mobileSize + px} + #{$addSize} * ((100vw - 375px) / (#{$maxWidth} - 375)));
 }
+
+@mixin adaptivePaddingLeft($pcSize, $mobileSize ) {
+    $addSize: $pcSize - $mobileSize;
+    padding-left: calc(#{$mobileSize + px} + #{$addSize} * ((100vw - 375px) / (#{$maxWidth} - 375)));
+}
+
+@mixin adaptivePaddingRight($pcSize, $mobileSize ) {
+    $addSize: $pcSize - $mobileSize;
+    padding-right: calc(#{$mobileSize + px} + #{$addSize} * ((100vw - 375px) / (#{$maxWidth} - 375)));
+}
+
+

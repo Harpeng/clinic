@@ -1,10 +1,14 @@
-@import '../styles/vendor/normalize.scss';
-@import '../styles/vendor/font.scss';
-@import '../styles/variables//breakpoints.scss';
-@import '../styles/variables/color.scss';
-@import '../styles/variables/fontSize.scss';
-@import '../styles/variables/size.scss';
-@import '../styles/mixins/button.scss';
-@import '../styles/mixins/flex.scss';
-@import '../styles/mixins/link.scss';
-@import '../styles/mixins/adaptive.scss';
+@import '../styles/vendor/normalize';
+@import '../styles/vendor/font';
+@import '../styles/variables//breakpoints';
+@import '../styles/variables/color';
+@import '../styles/variables/fontSize';
+@import '../styles/variables/size';
+@import '../styles/mixins/button';
+@import '../styles/mixins/flex';
+@import '../styles/mixins/link';
+@import '../styles/mixins/adaptive';
+@import '../styles/mixins/zeroing';
+@import '../styles/components/page/page';
+@import '../styles/components/header/header';
+

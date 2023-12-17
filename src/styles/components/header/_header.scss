@@ -1,0 +1,90 @@
+.header {
+  width: $percentWidth;
+
+  &__primary-block {
+    @include adaptivePaddingLeft(390, 17);
+    @include adaptivePaddingRight(390, 17);
+    @include flex(row, space-between);
+    max-height: 67px;
+  }
+
+  &__logo-group {
+    @include flex();
+    gap: 20.55px;
+    padding-top: 15px;
+  }
+
+  &__logo {
+    width: 91.043px;
+    height: 26.901px;
+    padding-top: 6.62px;
+  }
+
+  &__geolocation {
+    @include flex();
+    gap: 3px;
+    max-width: 133px;
+  }
+
+  &__geo-img {
+    width: 20px;
+    height: 20px;
+  }
+
+  &__adress {
+    @include flex(column);
+    gap: 0;
+    width: $percentWidth;
+  }
+
+  &__text {
+    font-size: $secondaryFontSize;
+    font-weight: $normalFontWeight;
+    line-height: $secondaryLineHeight;
+    color: $textColorMain;
+    @include zeroing();
+    max-width: 133px;
+    width: $percentWidth;
+
+    &_sm {
+      color: $textColorSecondary;
+    }
+  }
+
+  &__connection {
+    @include flex(row, center);
+    gap: 35px;
+    margin-top: 12px;
+  }
+
+  &__contact {
+    @include flex(row, center, center, center);
+    gap: 9px;
+  }
+
+  &__contact-icon {
+    width: 28px;
+    height: 28px;
+  }
+
+  &__number {
+    @include zeroing();
+    font-size: $mainFontSize;
+    font-weight: $normalFontWeight;
+    line-height: $mainLineHeight;
+    color: $textColorMain;
+    width: 138px;
+  }
+
+  &__button {
+    @include button();
+    max-width: 196px;
+    max-height: 43px;
+    box-sizing: border-box;
+    padding: 11px 24px 11px 23px;
+
+    &:hover{
+        background-color: $buttonHoverColor;
+    }
+  }
+}

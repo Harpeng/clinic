@@ -1,10 +1,46 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8">
-    <title>Webpack</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Медицинская клиника" />
+    <meta name="author" content="Гондарев Алексей" />
+    <meta name="keywords" content="медицина, клиника, здоровье, врач" />
+    <title>Clinic</title>
   </head>
-  <body>
-    <h1>Hello</h1>
+  <body class="page">
+    <div class="page__container">
+      <header class="header">
+        <div class="header__primary-block">
+          <div class="header__logo-group">
+            <img
+              class="header__logo"
+              src="<%=require('./styles/images/logo_header.svg')%>"
+            />
+            <div class="header__geolocation">
+              <img
+                class="header__geo-img"
+                src="<%=require('./styles/images/geo.svg')%>"
+              />
+              <div class="header__adress">
+                <p class="header__text">Ростов-на-Дону</p>
+                <p class="header__text header__text_sm">ул. Ленина, 2Б</p>
+              </div>
+            </div>
+          </div>
+          <div class="header__connection">
+            <div class="header__contact">
+              <img
+                class="header__contact-icon"
+                src="<%=require('./styles/images/whatsapp.png')%>"
+              />
+              <p class="header__number">+7(863) 000 00 00</p>
+            </div>
+            <button class="header__button">Записаться на прием</button>
+          </div>
+        </div>
+      </header>
+    </div>
   </body>
-</html> 
+</html>

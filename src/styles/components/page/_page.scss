@@ -1,0 +1,19 @@
+.page {
+    max-width: $screen-desktop;
+    min-width: $screen-mobile-low;
+    width: $percentWidth;
+    height: 100vh;
+    box-sizing: border-box;
+    margin: 0 auto;
+    font-family: 'PT Sans Caption';
+    overflow-x: hidden;
+
+    &__container {
+        background-color: $pageColorMain;
+        position: relative;
+        @include flex(column);
+        min-height: 100vh;
+        box-sizing: border-box;
+        margin: 0;
+    }
+}
