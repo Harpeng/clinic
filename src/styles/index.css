@@ -358,7 +358,7 @@ template {
   justify-self: auto;
   align-self: auto;
   flex-wrap: nowrap;
-  max-height: 67px;
+  min-height: 67px;
 }
 .header__logo-group {
   display: flex;
@@ -473,4 +473,34 @@ template {
 }
 .header__button:hover {
   background-color: #00D29F;
+}
+.header__menu {
+  background-color: #1FA181;
+  width: 100%;
+  padding-left: calc(17px + 373 * (100vw - 375px) / (1920 - 375));
+  max-height: 43px;
+}
+.header__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch;
+  justify-self: auto;
+  align-self: auto;
+  flex-wrap: nowrap;
+  gap: 30px;
+  padding: 10px 0 9px 0;
+  margin: 0;
+}
+.header__li {
+  list-style-type: none;
+}
+.header__link {
+  text-decoration: none;
+  cursor: pointer;
+  color: #FFF;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
 }/*# sourceMappingURL=index.css.map */

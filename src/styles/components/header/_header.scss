@@ -5,7 +5,7 @@
     @include adaptivePaddingLeft(390, 17);
     @include adaptivePaddingRight(390, 17);
     @include flex(row, space-between);
-    max-height: 67px;
+    min-height: 67px;
   }
 
   &__logo-group {
@@ -86,5 +86,30 @@
     &:hover{
         background-color: $buttonHoverColor;
     }
+  }
+
+  &__menu {
+    background-color: $menuColor;
+    width: $percentWidth;
+    @include adaptivePaddingLeft(390, 17);
+    max-height: 43px;
+  }
+
+  &__list {
+    @include flex();
+    gap: 30px;
+    padding: 10px 0 9px 0;
+    margin: 0;
+  }
+
+  &__li {
+    list-style-type: none;
+  }
+
+  &__link {
+    @include link();
+    font-size: $mainFontSize;
+    line-height: $mainLineHeight;
+    font-weight: $normalFontWeight;
   }
 }

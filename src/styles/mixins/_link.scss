@@ -1,4 +1,5 @@
 @mixin link() {
     text-decoration: none;
     cursor: pointer;
+    color: $pageColorMain;
 }
