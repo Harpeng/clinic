@@ -349,7 +349,7 @@ template {
 }
 .header__primary-block {
   padding-left: calc(17px + 373 * (100vw - 375px) / (1920 - 375));
-  padding-right: calc(17px + 373 * (100vw - 375px) / (1920 - 375));
+  padding-right: calc(17px + (373) * (100vw - 375px) / (1920 - 375));
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -359,6 +359,16 @@ template {
   align-self: auto;
   flex-wrap: nowrap;
   min-height: 67px;
+}
+@media (max-width: 1200px) {
+  .header__primary-block {
+    padding-left: calc(17px + 373 * 0.5 * (100vw - 375px) / (1920 - 375));
+  }
+}
+@media (max-width: 1200px) {
+  .header__primary-block {
+    padding-right: calc(17px + 373 * 0.5 * (100vw - 375px) / (1920 - 375));
+  }
 }
 .header__logo-group {
   display: flex;
@@ -480,6 +490,11 @@ template {
   padding-left: calc(17px + 373 * (100vw - 375px) / (1920 - 375));
   max-height: 43px;
 }
+@media (max-width: 1200px) {
+  .header__menu {
+    padding-left: calc(17px + 373 * 0.5 * (100vw - 375px) / (1920 - 375));
+  }
+}
 .header__list {
   display: flex;
   flex-direction: row;
@@ -503,4 +518,63 @@ template {
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
+}
+
+.content {
+  box-sizing: border-box;
+  width: 100%;
+  flex: 1 1 auto;
+}
+
+.clinic {
+  padding-left: calc(0px + 390 * (100vw - 375px) / (1920 - 375));
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch;
+  justify-self: auto;
+  align-self: auto;
+  flex-wrap: nowrap;
+  height: 100%;
+  gap: 164px;
+}
+@media (max-width: 1200px) {
+  .clinic {
+    padding-left: calc(0px + 390 * 0.5 * (100vw - 375px) / (1920 - 375));
+  }
+}
+.clinic__info {
+  max-width: 416px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch;
+  justify-self: flex-start;
+  align-self: center;
+  flex-wrap: nowrap;
+}
+.clinic__title {
+  margin: 0;
+  padding: 0;
+  font-size: calc(26px + 10 * (100vw - 375px) / (1920 - 375));
+  font-weight: 700;
+  line-height: normal;
+  color: #364844;
+  margin-bottom: 22px;
+}
+.clinic__text {
+  margin: 0;
+  padding: 0;
+  font-size: calc(14px + 2 * (100vw - 375px) / (1920 - 375));
+  line-height: calc(21px + 3 * (100vw - 375px) / (1920 - 375));
+  font-weight: 400;
+  color: #364844;
+  max-width: 367px;
+  margin-bottom: 15px;
+}
+.clinic__img {
+  max-width: calc(375px + 575 * (100vw - 375px) / (1920 - 375));
+  width: 100%;
 }/*# sourceMappingURL=index.css.map */

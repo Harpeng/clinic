@@ -1,0 +1,37 @@
+.clinic {
+    @include adaptivePaddingLeft(390, 0);
+    @include flex();
+    height: 100%;
+    gap: 164px;
+    
+
+    &__info {
+        max-width: 416px;
+        @include flex(column, flex-start, stretch, stretch, flex-start, center);
+    }
+
+    &__title {
+        @include zeroing();
+        @include adaptiveFont(36, 26);
+        font-weight: $primaryFontWeight;
+        line-height: $normalLineHeight;
+        color: $textColorMain;
+        margin-bottom: 22px;
+    }
+
+    &__text {
+        @include zeroing();
+        @include adaptiveFont(16, 14);
+        @include adaptiveLineHeight(24, 21);
+        font-weight: $normalFontWeight;
+        color: $textColorMain;
+        max-width: 367px;
+        margin-bottom: 15px
+    }
+
+    &__img {
+        // background-image: url('/src/styles/images/room.png');
+        @include adaptiveSize(950, 375, 1920);
+        width: $percentWidth;
+    }
+}
